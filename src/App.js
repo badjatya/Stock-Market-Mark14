@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import HomeImage from "./App/assets/img/Home.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="left-col">
+        <h1>Welcome To Neog Stock Market Calculator</h1>
+        <div className="inputContainer">
+          <div>
+            <input type="number" placeholder="Enter Stock Purchase Price" />
+          </div>
+          <div>
+            <input type="number" placeholder="Enter Stock Quantity" />
+          </div>
+          <div>
+            <input type="number" placeholder="Enter Current Stock Price" />
+          </div>
+        </div>
+        <div className="buttonContainer">
+          <span>Check</span>
+        </div>
+        <p className="output">Hii</p>
+      </div>
+      <div className="right-col">
+        <img src={HomeImage} alt="HomeImage" />
+      </div>
     </div>
   );
 }
